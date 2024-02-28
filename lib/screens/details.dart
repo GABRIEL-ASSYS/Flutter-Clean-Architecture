@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:hyrule/controllers/dao_controller.dart';
 import 'package:hyrule/domain/models/entry.dart';
 
@@ -21,17 +19,17 @@ class Details extends StatelessWidget {
           onPressed: () {
             daoController.saveEntry(entry: entry);
           },
-          child: Icon(Icons.bookmark),
+          child: const Icon(Icons.bookmark),
         ),
         body: Padding(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Column(
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(bottom: 16),
+                padding: const EdgeInsets.only(bottom: 16),
                 child: Text(
                   entry.name.toUpperCase(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 21,
                   ),
                 ),
@@ -40,17 +38,17 @@ class Details extends StatelessWidget {
                 children: entry
                     .commonLocationsConverter()
                     .map((e) => Padding(
-                          padding: EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.only(right: 8),
                           child: Chip(
                               label: Text(
                             e,
-                            style: TextStyle(fontSize: 14),
+                            style: const TextStyle(fontSize: 14),
                           )),
                         ))
                     .toList(),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 16, 0, 16),
+                padding: const EdgeInsets.fromLTRB(0, 16, 0, 16),
                 child: Container(
                   height: 220,
                   decoration: BoxDecoration(

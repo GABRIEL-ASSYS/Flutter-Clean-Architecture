@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:hyrule/screens/results.dart';
 import 'package:hyrule/utils/consts/categories.dart';
 
@@ -39,7 +38,7 @@ class Category extends StatelessWidget {
         ),
         Text(
           categories[category]!,
-          style: TextStyle(
+          style: const TextStyle(
             color: Color(0xFF00497D),
             fontSize: 22.0,
             fontWeight: FontWeight.w400,

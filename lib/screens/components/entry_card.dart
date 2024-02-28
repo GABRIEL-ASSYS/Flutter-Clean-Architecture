@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:hyrule/controllers/dao_controller.dart';
 import 'package:hyrule/domain/models/entry.dart';
 import 'package:hyrule/screens/details.dart';
@@ -16,7 +14,7 @@ class EntryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Container(
         width: 328,
         height: 300,
@@ -43,7 +41,7 @@ class EntryCard extends StatelessWidget {
                   },
                   child: Ink(
                     child: Padding(
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Row(
                         children: <Widget>[
                           Container(
@@ -58,17 +56,17 @@ class EntryCard extends StatelessWidget {
                           SizedBox(
                             width: 184,
                             child: Padding(
-                              padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                              padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Text(
                                     entry.name.toUpperCase(),
-                                    style: TextStyle(fontSize: 21),
+                                    style: const TextStyle(fontSize: 21),
                                   ),
                                   Text(
                                     entry.description,
-                                    style: TextStyle(fontSize: 12),
+                                    style: const TextStyle(fontSize: 12),
                                   ),
                                 ],
                               ),
